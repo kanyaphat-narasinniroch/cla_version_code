@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>รายละเอียดพืชกินได้ - Little Roots สวนพฤกษศาสตร์สำหรับเด็ก</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mali:wght@400;500;600;700&amp;family=Prompt:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&amp;display=swap"
+      rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="edible.css" rel="stylesheet">
+    <link href="herb-detail.css" rel="stylesheet">
+    <link href="edible-detail.css" rel="stylesheet">
+  </head>
+  <body data-nav="food">
+    <div id="site-header"></div>
+    <script src="header.js"></script>
+
+    <div class="container breadcrumb-section">
+      <a class="back-home-link" href="edible.html">
+        <span>← ย้อนกลับไปหน้าพืชกินได้ / Back to Edible Plants</span>
+      </a>
+    </div>
+
+    <div class="container">
+      <!-- ข้อมูลพืชถูกสร้างโดย edible-detail.js จาก edible-data.js -->
+      <div class="detail-layout" id="edible-detail"></div>
+      <p class="no-result-message" id="edible-missing" hidden>
+        ไม่พบข้อมูลพืชชนิดนี้ <a class="inline-link" href="edible.html">กลับไปเลือกพืชกินได้</a>
+      </p>
+      <nav class="detail-pager" id="edible-pager" hidden></nav>
+    </div>
+
+    <div id="site-footer"></div>
+    <script src="footer.js"></script>
+    <script src="edible-data.js"></script>
+    <script src="edible-detail.js"></script>
+  </body>
+</html>

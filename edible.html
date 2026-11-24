@@ -13,7 +13,7 @@
     <link href="style.css" rel="stylesheet">
     <link href="edible.css" rel="stylesheet">
   </head>
-  <body data-nav="edible">
+  <body data-nav="food">
     <!-- เมนูด้านบน (สร้างโดย header.js) -->
     <div id="site-header"></div>
     <script src="header.js"></script>
@@ -33,9 +33,9 @@
             <span class="badge-category-pill">🥕 หมวดหมู่: พืชกินได้ (edible plants)</span>
             <span class="badge-count-pill">✨ 12 ชนิด พืชในหมวดหมู่นี้</span>
           </div>
-          <h1 class="banner-title">รวมพันธุ์<span>พืชกินได้</span>ผักพื้นบ้าน และผลไม้ไทย</h1>
+          <h1 class="banner-title">รวมพันธุ์<span>พืชกินได้</span>ผักพื้นบ้าน ผลไม้ไทย และเครื่องเทศ</h1>
           <p class="banner-desc">
-            สำรวจผักสวนครัวริมรั้วและผลไม้ไทยรสเลิศที่ปลูกง่าย อุดมด้วยวิตามินและสารอาหาร พร้อมเกร็ดน่ารู้ในการนำมาปรุงอาหาร
+            สำรวจผักสวนครัวริมรั้ว ผลไม้ไทยรสเลิศ และเครื่องเทศหอมๆ ที่ปลูกง่าย อุดมด้วยวิตามินและสารอาหาร พร้อมเกร็ดน่ารู้ในการนำมาปรุงอาหาร
           </p>
         </div>
         <div class="banner-pixel-deco">
@@ -63,34 +63,30 @@
             <h4 class="filter-group-title">🌱 กลุ่มย่อย (Sub-Category)</h4>
             <div class="filter-checkbox-list">
               <label class="custom-checkbox-label">
-                <input checked data-filter-group="sub" type="checkbox" value="household">
-                <span>สมุนไพรประจำบ้าน (Household Remedies)</span>
+                <input checked data-filter-group="sub" type="checkbox" value="veg">
+                <span>ผักพื้นบ้านและผักริมรั้ว (Local Vegetables)</span>
               </label>
               <label class="custom-checkbox-label">
-                <input checked data-filter-group="sub" type="checkbox" value="specialist">
-                <span>สมุนไพรเฉพาะทาง (Specialist Herbs)</span>
+                <input checked data-filter-group="sub" type="checkbox" value="fruit">
+                <span>ผลไม้พื้นเมือง (Native Fruits)</span>
               </label>
               <label class="custom-checkbox-label">
-                <input checked data-filter-group="sub" type="checkbox" value="wellness">
-                <span>เพื่อบำรุงสุขภาพ (Wellness)</span>
+                <input checked data-filter-group="sub" type="checkbox" value="spice">
+                <span>เครื่องเทศและพืชแต่งกลิ่น (Spices &amp; Aromatics)</span>
               </label>
             </div>
           </div>
-          <!-- Part Used Filter -->
+          <!-- Part Eaten Filter -->
           <div class="filter-group">
-            <h4 class="filter-group-title">🌿 ส่วนที่ใช้ประโยชน์ (Part Used)</h4>
+            <h4 class="filter-group-title">🥗 ส่วนที่กิน (Part Eaten)</h4>
             <div class="filter-checkbox-list">
               <label class="custom-checkbox-label">
                 <input checked data-filter-group="part" type="checkbox" value="leaf">
                 <span>ใบและยอดอ่อน (Leaves &amp; Shoots)</span>
               </label>
               <label class="custom-checkbox-label">
-                <input checked data-filter-group="part" type="checkbox" value="root">
-                <span>เหง้าและราก (Rhizomes &amp; Roots)</span>
-              </label>
-              <label class="custom-checkbox-label">
-                <input checked data-filter-group="part" type="checkbox" value="flower">
-                <span>ดอกและเกสร (Flowers &amp; Pollen)</span>
+                <input checked data-filter-group="part" type="checkbox" value="stem">
+                <span>ก้านและลำต้น (Stalks &amp; Stems)</span>
               </label>
               <label class="custom-checkbox-label">
                 <input checked data-filter-group="part" type="checkbox" value="fruit">
@@ -101,7 +97,7 @@
           <!-- Friendly Pixel-Art Guide NPC Character -->
           <div class="sidebar-npc-widget">
             <div class="sidebar-bubble">
-              "สมุนไพรแต่ละชนิดมีรสยาเฉพาะตัว การใช้ยาแผนไทยต้องคำนึงถึงขนาดและวิธีใช้ที่ถูกต้อง!"
+              "พืชกินได้ต้องล้างให้สะอาดและปรุงให้ถูกวิธี ถ้าไม่แน่ใจว่าเป็นพืชอะไร อย่าเก็บมากินเองนะ!"
             </div>
             <div class="sidebar-npc-row">
               <!-- Pixel Avatar NPC Sprite -->
@@ -150,278 +146,290 @@
           <!-- 2-Column Grid (6 Rows, 12 Plants) -->
           <div class="plants-listing-grid" data-plant-grid>
 
-            <!-- 1. ฟ้าทะลายโจร -->
-            <article class="listing-plant-card" data-id="andrographis" data-part="leaf" data-sub="household">
+            <!-- 1. ชะอม -->
+            <article class="listing-plant-card" data-id="chaom" data-part="leaf" data-sub="veg">
               <div class="plant-thumb-box">
-                <img src="img/herbs/andrographis.jpg" alt="ฟ้าทะลายโจร">
+                <span class="thumb-emoji" aria-hidden="true">🌿</span>
+                <img src="img/edible/chaom.jpg" alt="ชะอม" loading="lazy">
               </div>
               <div class="card-info-col">
                 <div class="plant-card-title-row">
-                  <h3 class="plant-thai-title">ฟ้าทะลายโจร</h3>
+                  <h3 class="plant-thai-title">ชะอม</h3>
                 </div>
-                <div class="plant-sci-name">Fah Talai Jone / Andrographis paniculata</div>
+                <div class="plant-sci-name">Cha-om / Acacia pennata</div>
                 <p class="plant-brief">
-                  แก้ไข้หวัด บรรเทาอาการเจ็บคอ เสริมภูมิคุ้มกัน และต้านการอักเสบของระบบทางเดินหายใจ
+                  ยอดอ่อนมีรสมันและกลิ่นฉุนเฉพาะตัว ยอดนิยมนำไปทอดไข่ชะอมคู่กับน้ำพริกกะปิ
                 </p>
                 <div class="card-bottom-row">
                   <div class="card-tags-list">
-                    <span class="mini-tag tag-taste">รสขม</span>
-                    <span class="mini-tag tag-property-cool">ฤทธิ์เย็น</span>
+                    <span class="mini-tag tag-taste">รสมัน กลิ่นฉุน</span>
+                    <span class="mini-tag tag-property-warm">กินยอดอ่อน</span>
                   </div>
-                  <a class="view-info-btn" href="herb-detail.html?id=andrographis">อ่านข้อมูล →</a>
+                  <a class="view-info-btn" href="edible-detail.html?id=chaom">อ่านข้อมูล →</a>
                 </div>
               </div>
             </article>
 
-            <!-- 2. ขิง -->
-            <article class="listing-plant-card" data-id="ginger" data-part="root" data-sub="household">
+            <!-- 2. ผักหวานป่า -->
+            <article class="listing-plant-card" data-id="phakwanpa" data-part="leaf" data-sub="veg">
               <div class="plant-thumb-box">
-                <img src="img/herbs/ginger.jpg" alt="ขิง">
+                <span class="thumb-emoji" aria-hidden="true">🌱</span>
+                <img src="img/edible/phakwanpa.jpg" alt="ผักหวานป่า" loading="lazy">
               </div>
               <div class="card-info-col">
                 <div class="plant-card-title-row">
-                  <h3 class="plant-thai-title">ขิง</h3>
+                  <h3 class="plant-thai-title">ผักหวานป่า</h3>
                 </div>
-                <div class="plant-sci-name">Ginger / Zingiber officinale</div>
+                <div class="plant-sci-name">Pak-Waan / Melientha suavis</div>
                 <p class="plant-brief">
-                  ขับลม แก้ท้องอืด ท้องเฟ้อ ช่วยย่อยอาหาร กระตุ้นการไหลเวียนเลือด และบรรเทาอาการคลื่นไส้
+                  ราชินีผักป่ารสหวานตามธรรมชาติ กรอบอร่อย เหมาะสำหรับแกงเลียงและต้มจืดหมูสับ
                 </p>
                 <div class="card-bottom-row">
                   <div class="card-tags-list">
-                    <span class="mini-tag tag-taste">รสเผ็ดร้อน</span>
-                    <span class="mini-tag tag-property-hot">ฤทธิ์ร้อน</span>
+                    <span class="mini-tag tag-taste">รสหวานตามธรรมชาติ</span>
+                    <span class="mini-tag tag-property-warm">กินยอดอ่อน</span>
                   </div>
-                  <a class="view-info-btn" href="herb-detail.html?id=ginger">อ่านข้อมูล →</a>
+                  <a class="view-info-btn" href="edible-detail.html?id=phakwanpa">อ่านข้อมูล →</a>
                 </div>
               </div>
             </article>
 
-            <!-- 3. ขมิ้นชัน -->
-            <article class="listing-plant-card" data-id="turmeric" data-part="root" data-sub="specialist">
+            <!-- 3. ตำลึง -->
+            <article class="listing-plant-card" data-id="tamlueng" data-part="leaf fruit" data-sub="veg">
               <div class="plant-thumb-box">
-                <img src="img/herbs/turmeric.jpg" alt="ขมิ้นชัน">
+                <span class="thumb-emoji" aria-hidden="true">🥒</span>
+                <img src="img/edible/tamlueng.jpg" alt="ตำลึง" loading="lazy">
               </div>
               <div class="card-info-col">
                 <div class="plant-card-title-row">
-                  <h3 class="plant-thai-title">ขมิ้นชัน</h3>
+                  <h3 class="plant-thai-title">ตำลึง</h3>
                 </div>
-                <div class="plant-sci-name">Turmeric / Curcuma longa</div>
+                <div class="plant-sci-name">Ivy Gourd / Coccinia grandis</div>
                 <p class="plant-brief">
-                  สมานแผลในกระเพาะอาหาร ต้านการอักเสบ บรรเทากรดไหลย้อน บำรุงผิวพรรณให้ผ่องใส
-                </p>
-                <div class="card-bottom-row">
-                  <div class="card-tags-list">
-                    <span class="mini-tag tag-taste">รสฝาดเอียน</span>
-                    <span class="mini-tag tag-property-warm">ฤทธิ์อุ่น</span>
-                  </div>
-                  <a class="view-info-btn" href="herb-detail.html?id=turmeric">อ่านข้อมูล →</a>
-                </div>
-              </div>
-            </article>
-
-            <!-- 4. ว่านหางจระเข้ -->
-            <article class="listing-plant-card" data-id="aloevera" data-part="leaf" data-sub="household">
-              <div class="plant-thumb-box">
-                <img src="img/herbs/aloevera.jpg" alt="ว่านหางจระเข้">
-              </div>
-              <div class="card-info-col">
-                <div class="plant-card-title-row">
-                  <h3 class="plant-thai-title">ว่านหางจระเข้</h3>
-                </div>
-                <div class="plant-sci-name">Aloe Vera / Aloe barbadensis</div>
-                <p class="plant-brief">
-                  สมานแผลไฟไหม้ น้ำร้อนลวก บำรุงผิวให้ชุ่มชื้น ลดรอยแผลเป็น และปลอบประโลมผิวจากแสงแดด
+                  ไม้เลื้อยริมรั้วดูแลง่าย รสจืดเย็น ธาตุอาหารสูง ช่วยบำรุงสายตาและระบบขับถ่าย
                 </p>
                 <div class="card-bottom-row">
                   <div class="card-tags-list">
                     <span class="mini-tag tag-taste">รสจืดเย็น</span>
-                    <span class="mini-tag tag-property-cool">ฤทธิ์เย็น</span>
+                    <span class="mini-tag tag-property-warm">กินยอด ใบ ผลอ่อน</span>
                   </div>
-                  <a class="view-info-btn" href="herb-detail.html?id=aloevera">อ่านข้อมูล →</a>
+                  <a class="view-info-btn" href="edible-detail.html?id=tamlueng">อ่านข้อมูล →</a>
                 </div>
               </div>
             </article>
 
-            <!-- 5. บัวบก -->
-            <article class="listing-plant-card" data-id="gotukola" data-part="leaf" data-sub="household">
+            <!-- 4. มะละกอ -->
+            <article class="listing-plant-card" data-id="papaya" data-part="fruit" data-sub="fruit">
               <div class="plant-thumb-box">
-                <img src="img/herbs/cantellaasiatica.jpg" alt="บัวบก">
+                <span class="thumb-emoji" aria-hidden="true">🥭</span>
+                <img src="img/edible/papaya.jpg" alt="มะละกอ" loading="lazy">
               </div>
               <div class="card-info-col">
                 <div class="plant-card-title-row">
-                  <h3 class="plant-thai-title">บัวบก</h3>
+                  <h3 class="plant-thai-title">มะละกอ</h3>
                 </div>
-                <div class="plant-sci-name">Gotu Kola / Centella asiatica</div>
+                <div class="plant-sci-name">Papaya / Carica papaya</div>
                 <p class="plant-brief">
-                  แก้ร้อนใน ช้ำใน บำรุงสมองและความจำ กระตุ้นการสร้างคอลลาเจน และช่วยสมานแผลได้รวดเร็ว
+                  ผลดิบทำส้มตำกรุบกรอบ ผลสุกเนื้อสีส้มรสหวานฉ่ำ เอนไซม์ปาเปนช่วยย่อยอาหารได้ดีเยี่ยม
                 </p>
                 <div class="card-bottom-row">
                   <div class="card-tags-list">
-                    <span class="mini-tag tag-taste">รสขมเย็น</span>
-                    <span class="mini-tag tag-property-cool">ฤทธิ์เย็น</span>
+                    <span class="mini-tag tag-taste">ผลสุกหวานฉ่ำ ผลดิบจืดกรอบ</span>
+                    <span class="mini-tag tag-property-warm">กินผลดิบ-ผลสุก</span>
                   </div>
-                  <a class="view-info-btn" href="herb-detail.html?id=gotukola">อ่านข้อมูล →</a>
+                  <a class="view-info-btn" href="edible-detail.html?id=papaya">อ่านข้อมูล →</a>
                 </div>
               </div>
             </article>
 
-            <!-- 6. กะเพรา -->
-            <article class="listing-plant-card" data-id="holybasil" data-part="leaf" data-sub="household">
+            <!-- 5. มังคุด -->
+            <article class="listing-plant-card" data-id="mangosteen" data-part="fruit" data-sub="fruit">
               <div class="plant-thumb-box">
-                <img src="img/herbs/thaibasil.jpg" alt="กะเพรา">
+                <span class="thumb-emoji" aria-hidden="true">🍇</span>
+                <img src="img/edible/mangosteen.jpg" alt="มังคุด" loading="lazy">
               </div>
               <div class="card-info-col">
                 <div class="plant-card-title-row">
-                  <h3 class="plant-thai-title">กะเพรา</h3>
+                  <h3 class="plant-thai-title">มังคุด</h3>
                 </div>
-                <div class="plant-sci-name">Holy Basil / Ocimum tenuiflorum</div>
+                <div class="plant-sci-name">Mangosteen / Garcinia mangostana</div>
                 <p class="plant-brief">
-                  ขับลม แก้อาการจุกเสียด แน่นท้อง บำรุงธาตุไฟ ลดน้ำตาลในเลือด และช่วยให้เจริญอาหาร
+                  ราชินีแห่งผลไม้ไทย เนื้อขาวบริสุทธิ์ รสชาติหวานอมเปรี้ยว สดชื่นคลายร้อน
                 </p>
                 <div class="card-bottom-row">
                   <div class="card-tags-list">
-                    <span class="mini-tag tag-taste">รสเผ็ดร้อน</span>
-                    <span class="mini-tag tag-property-hot">ฤทธิ์ร้อน</span>
+                    <span class="mini-tag tag-taste">หวานอมเปรี้ยว</span>
+                    <span class="mini-tag tag-property-warm">กินเนื้อผล</span>
                   </div>
-                  <a class="view-info-btn" href="herb-detail.html?id=holybasil">อ่านข้อมูล →</a>
+                  <a class="view-info-btn" href="edible-detail.html?id=mangosteen">อ่านข้อมูล →</a>
                 </div>
               </div>
             </article>
 
-            <!-- 7. ตะไคร้ -->
-            <article class="listing-plant-card" data-id="lemongrass" data-part="leaf root" data-sub="wellness">
+            <!-- 6. ขนุน -->
+            <article class="listing-plant-card" data-id="jackfruit" data-part="fruit" data-sub="fruit">
               <div class="plant-thumb-box">
-                <img src="img/herbs/lemongrass.jpg" alt="ตะไคร้">
+                <span class="thumb-emoji" aria-hidden="true">🍈</span>
+                <img src="img/edible/jackfruit.jpg" alt="ขนุน" loading="lazy">
               </div>
               <div class="card-info-col">
                 <div class="plant-card-title-row">
-                  <h3 class="plant-thai-title">ตะไคร้</h3>
+                  <h3 class="plant-thai-title">ขนุน</h3>
                 </div>
-                <div class="plant-sci-name">Lemongrass / Cymbopogon citratus</div>
+                <div class="plant-sci-name">Jackfruit / Artocarpus heterophyllus</div>
                 <p class="plant-brief">
-                  ขับปัสสาวะ กลิ่นหอมระเหยช่วยให้ผ่อนคลายและสดชื่น บรรเทาหวัด ขับลมในลำไส้
+                  ยวงสีเหลืองทองรสหวานหอมกรอบ ส่วนผลอ่อนนำมาปรุงแกงคั่วหรือตำขนุนรสเลิศ
                 </p>
                 <div class="card-bottom-row">
                   <div class="card-tags-list">
-                    <span class="mini-tag tag-taste">รสหอมปร่า</span>
-                    <span class="mini-tag tag-property-warm">ฤทธิ์อุ่น</span>
+                    <span class="mini-tag tag-taste">หวานหอม</span>
+                    <span class="mini-tag tag-property-warm">กินยวง ผลอ่อน เมล็ด</span>
                   </div>
-                  <a class="view-info-btn" href="herb-detail.html?id=lemongrass">อ่านข้อมูล →</a>
+                  <a class="view-info-btn" href="edible-detail.html?id=jackfruit">อ่านข้อมูล →</a>
                 </div>
               </div>
             </article>
 
-            <!-- 8. กระชาย -->
-            <article class="listing-plant-card" data-id="fingerroot" data-part="root" data-sub="wellness">
+            <!-- 7. ตะลิงปลิง -->
+            <article class="listing-plant-card" data-id="bilimbi" data-part="fruit" data-sub="fruit">
               <div class="plant-thumb-box">
-                <img src="img/herbs/fingerroot.jpg" alt="กระชาย">
+                <span class="thumb-emoji" aria-hidden="true">🍋</span>
+                <img src="img/edible/bilimbi.jpg" alt="ตะลิงปลิง" loading="lazy">
               </div>
               <div class="card-info-col">
                 <div class="plant-card-title-row">
-                  <h3 class="plant-thai-title">กระชาย</h3>
+                  <h3 class="plant-thai-title">ตะลิงปลิง</h3>
                 </div>
-                <div class="plant-sci-name">Fingerroot / Boesenbergia rotunda</div>
+                <div class="plant-sci-name">Bilimbi / Averrhoa bilimbi</div>
                 <p class="plant-brief">
-                  บำรุงกำลัง ปรับสมดุลฮอร์โมน ต้านเชื้อจุลินทรีย์ บำรุงกระดูกและข้อ สมญานามโสมไทย
+                  ผลไม้รสเปรี้ยวจี๊ดถึงใจ นิยมนำมาใส่ต้มยำ ยำ หรือทานคู่กับกะปิหวานเติมความสดชื่น
                 </p>
                 <div class="card-bottom-row">
                   <div class="card-tags-list">
-                    <span class="mini-tag tag-taste">รสเผ็ดร้อนขม</span>
-                    <span class="mini-tag tag-property-hot">ฤทธิ์ร้อน</span>
+                    <span class="mini-tag tag-taste">เปรี้ยวจี๊ด</span>
+                    <span class="mini-tag tag-property-warm">กินผลสด</span>
                   </div>
-                  <a class="view-info-btn" href="herb-detail.html?id=fingerroot">อ่านข้อมูล →</a>
+                  <a class="view-info-btn" href="edible-detail.html?id=bilimbi">อ่านข้อมูล →</a>
                 </div>
               </div>
             </article>
 
-            <!-- 9. มะขามป้อม -->
-            <article class="listing-plant-card" data-id="gooseberry" data-part="fruit" data-sub="wellness">
+            <!-- 8. ผักกูด -->
+            <article class="listing-plant-card" data-id="pakkut" data-part="leaf" data-sub="veg">
               <div class="plant-thumb-box">
-                <img src="img/herbs/indiangooseberry.jpg" alt="มะขามป้อม">
+                <span class="thumb-emoji" aria-hidden="true">🥬</span>
+                <img src="img/edible/pakkut.jpg" alt="ผักกูด" loading="lazy">
               </div>
               <div class="card-info-col">
                 <div class="plant-card-title-row">
-                  <h3 class="plant-thai-title">มะขามป้อม</h3>
+                  <h3 class="plant-thai-title">ผักกูด</h3>
                 </div>
-                <div class="plant-sci-name">Indian Gooseberry / Phyllanthus emblica</div>
+                <div class="plant-sci-name">Paco Fern / Diplazium esculentum</div>
                 <p class="plant-brief">
-                  วิตามินซีสูง แก้ไอ ขับเสมหะ บรรเทาอาการเจ็บคอ บำรุงเสียง และเสริมเกราะป้องกันไข้หวัด
+                  เฟิร์นทานได้ที่เจริญเติบโตเฉพาะแหล่งน้ำสะอาด ยอดม้วนกรอบ เหมาะทำยำผักกูดกุ้งสด
                 </p>
                 <div class="card-bottom-row">
                   <div class="card-tags-list">
-                    <span class="mini-tag tag-taste">รสเปรี้ยวฝาดขม</span>
-                    <span class="mini-tag tag-property-cool">ฤทธิ์เย็น</span>
+                    <span class="mini-tag tag-taste">รสจืดกรอบ</span>
+                    <span class="mini-tag tag-property-warm">กินยอดอ่อน</span>
                   </div>
-                  <a class="view-info-btn" href="herb-detail.html?id=gooseberry">อ่านข้อมูล →</a>
+                  <a class="view-info-btn" href="edible-detail.html?id=pakkut">อ่านข้อมูล →</a>
                 </div>
               </div>
             </article>
 
-            <!-- 10. อัญชัน -->
-            <article class="listing-plant-card" data-id="butterflypea" data-part="flower" data-sub="wellness">
+            <!-- 9. มะแขว่น -->
+            <article class="listing-plant-card" data-id="makhwaen" data-part="fruit" data-sub="spice">
               <div class="plant-thumb-box">
-                <img src="img/herbs/butterflypea.jpg" alt="อัญชัน">
+                <span class="thumb-emoji" aria-hidden="true">🌶️</span>
+                <img src="img/edible/makhwaen.jpg" alt="มะแขว่น" loading="lazy">
               </div>
               <div class="card-info-col">
                 <div class="plant-card-title-row">
-                  <h3 class="plant-thai-title">อัญชัน</h3>
+                  <h3 class="plant-thai-title">มะแขว่น</h3>
                 </div>
-                <div class="plant-sci-name">Butterfly Pea / Clitoria ternatea</div>
+                <div class="plant-sci-name">Northern Pepper / Zanthoxylum limonella</div>
                 <p class="plant-brief">
-                  สารแอนโทไซยานินสูง บำรุงสายตา กระตุ้นการไหลเวียนโลหิต บำรุงเส้นผมให้ดกดำเงางาม
+                  เครื่องเทศล้านนาเอกลักษณ์ กลิ่นหอมซ่าเป็นเอกลักษณ์ นิยมใส่ในลาบคั่วและแกงแค
                 </p>
                 <div class="card-bottom-row">
                   <div class="card-tags-list">
-                    <span class="mini-tag tag-taste">รสจืดเย็น</span>
-                    <span class="mini-tag tag-property-cool">ฤทธิ์เย็น</span>
+                    <span class="mini-tag tag-taste">หอมซ่า ชาลิ้นเล็กน้อย</span>
+                    <span class="mini-tag tag-property-warm">ใช้ผลแห้ง</span>
                   </div>
-                  <a class="view-info-btn" href="herb-detail.html?id=butterflypea">อ่านข้อมูล →</a>
+                  <a class="view-info-btn" href="edible-detail.html?id=makhwaen">อ่านข้อมูล →</a>
                 </div>
               </div>
             </article>
 
-            <!-- 11. ไพล -->
-            <article class="listing-plant-card" data-id="phlai" data-part="root" data-sub="specialist">
+            <!-- 10. มะกรูด -->
+            <article class="listing-plant-card" data-id="makrut" data-part="leaf fruit" data-sub="spice">
               <div class="plant-thumb-box">
-                <img src="img/herbs/phlai.jpg" alt="ไพล">
+                <span class="thumb-emoji" aria-hidden="true">🍋</span>
+                <img src="img/edible/makrut.jpg" alt="มะกรูด" loading="lazy">
               </div>
               <div class="card-info-col">
                 <div class="plant-card-title-row">
-                  <h3 class="plant-thai-title">ไพล</h3>
+                  <h3 class="plant-thai-title">มะกรูด</h3>
                 </div>
-                <div class="plant-sci-name">Phlai / Zingiber cassumunar</div>
+                <div class="plant-sci-name">Kaffir Lime / Citrus hystrix</div>
                 <p class="plant-brief">
-                  บรรเทาอาการเคล็ดขัดยอก ฟกช้ำ ปวดเมื่อยกล้ามเนื้อ แก้อักเสบเฉพาะที่ และนิยมใช้ทำลูกประคบ
+                  ผิวมะกรูดและใบหอมฉุน ขาดไม่ได้ในต้มยำและพริกแกง มีน้ำมันหอมระเหยช่วยให้ผ่อนคลาย
                 </p>
                 <div class="card-bottom-row">
                   <div class="card-tags-list">
-                    <span class="mini-tag tag-taste">รสเผ็ดปร่า</span>
-                    <span class="mini-tag tag-property-warm">ฤทธิ์อุ่น</span>
+                    <span class="mini-tag tag-taste">หอมฉุน เปรี้ยว</span>
+                    <span class="mini-tag tag-property-warm">ใช้ใบ ผิว น้ำ</span>
                   </div>
-                  <a class="view-info-btn" href="herb-detail.html?id=phlai">อ่านข้อมูล →</a>
+                  <a class="view-info-btn" href="edible-detail.html?id=makrut">อ่านข้อมูล →</a>
                 </div>
               </div>
             </article>
 
-            <!-- 12. ทองพันชั่ง -->
-            <article class="listing-plant-card" data-id="whitecraneflower" data-part="leaf" data-sub="specialist">
+            <!-- 11. ผักแพว -->
+            <article class="listing-plant-card" data-id="phakphaeo" data-part="leaf" data-sub="veg">
               <div class="plant-thumb-box">
-                <img src="img/herbs/whitecraneflower.png" alt="ทองพันชั่ง">
+                <span class="thumb-emoji" aria-hidden="true">🍃</span>
+                <img src="img/edible/phakphaeo.jpg" alt="ผักแพว" loading="lazy">
               </div>
               <div class="card-info-col">
                 <div class="plant-card-title-row">
-                  <h3 class="plant-thai-title">ทองพันชั่ง</h3>
+                  <h3 class="plant-thai-title">ผักแพว</h3>
                 </div>
-                <div class="plant-sci-name">White Crane Flower / Rhinacanthus nasutus</div>
+                <div class="plant-sci-name">Vietnamese Coriander / Persicaria odorata</div>
                 <p class="plant-brief">
-                  รักษาโรคผิวหนัง กลากเกลื้อน ต้านเชื้อรา ดับพิษไข้ ดับพิษโลหิต และช่วยสมานแผลผื่นคัน
+                  ผักพื้นบ้านกลิ่นหอมฉุน รสเผ็ดปร่าเล็กน้อย นิยมกินแนมกับลาบ น้ำตก และข้าวยำปักษ์ใต้
                 </p>
                 <div class="card-bottom-row">
                   <div class="card-tags-list">
-                    <span class="mini-tag tag-taste">รสจืดเบื่อ</span>
-                    <span class="mini-tag tag-property-cool">ฤทธิ์เย็น</span>
+                    <span class="mini-tag tag-taste">เผ็ดร้อนปร่า กลิ่นหอมฉุน</span>
+                    <span class="mini-tag tag-property-warm">กินใบสด</span>
                   </div>
-                  <a class="view-info-btn" href="herb-detail.html?id=whitecraneflower">อ่านข้อมูล →</a>
+                  <a class="view-info-btn" href="edible-detail.html?id=phakphaeo">อ่านข้อมูล →</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- 12. สายบัว -->
+            <article class="listing-plant-card" data-id="saibua" data-part="stem" data-sub="veg">
+              <div class="plant-thumb-box">
+                <span class="thumb-emoji" aria-hidden="true">🪷</span>
+                <img src="img/edible/saibua.jpg" alt="สายบัว" loading="lazy">
+              </div>
+              <div class="card-info-col">
+                <div class="plant-card-title-row">
+                  <h3 class="plant-thai-title">สายบัว</h3>
+                </div>
+                <div class="plant-sci-name">Water Lily Stem / Nymphaea lotus (บัวสาย)</div>
+                <p class="plant-brief">
+                  พืชน้ำ ก้านดอกบัวสายอุ้มน้ำ รสจืดกรอบหวานอ่อนๆ นิยมนำมาทำต้มกะทิสายบัวปลาทูสดรสกลมกล่อม
+                </p>
+                <div class="card-bottom-row">
+                  <div class="card-tags-list">
+                    <span class="mini-tag tag-taste">รสจืดกรอบ หวานอ่อนๆ</span>
+                    <span class="mini-tag tag-property-warm">กินก้านดอก</span>
+                  </div>
+                  <a class="view-info-btn" href="edible-detail.html?id=saibua">อ่านข้อมูล →</a>
                 </div>
               </div>
             </article>
@@ -435,6 +443,7 @@
     <!-- ส่วนท้ายเว็บ (สร้างโดย footer.js) -->
     <div id="site-footer"></div>
     <script src="footer.js"></script>
+    <script src="edible.js"></script>
     <script src="listing.js"></script>
   </body>
 </html>

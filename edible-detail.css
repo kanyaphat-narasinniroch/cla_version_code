@@ -1,0 +1,29 @@
+/* edible-detail.css — ปรับสีหน้ารายละเอียดพืชกินได้ (edible-detail.html) ให้เป็นโทนส้มเหมือนหน้ารายการ
+   ใช้ต่อจาก herb-detail.css */
+
+.herb-title { color: #393124; }
+.herb-title .title-en { color: #d36600; }
+.bullet-list li::before { background: #d36600; }
+.data-grid dt { color: #995700; }
+.inline-link { color: #d36600; }
+
+@media (hover: hover) {
+  .pager-link:hover { background: #d36600; border-color: #d36600; }
+}
+
+/* ไม่มีรูปจริง -> กล่อง emoji */
+.photo-fallback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 6rem;
+  background: linear-gradient(135deg, #fff7ec 0%, #ffe6c9 100%);
+  border: 2px dashed #ffcb87;
+}
+
+/* ยังไม่มีรูป 8-bit -> โชว์ emoji ในกล่อง 8-bit */
+.art-placeholder {
+  font-size: 3rem;
+  line-height: 1;
+  opacity: 0.85;
+}

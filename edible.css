@@ -1,4 +1,4 @@
-/* herb.css — สไตล์เฉพาะหน้า herb.html
+/* edible.css — สไตล์เฉพาะหน้า edible.html
    (สไตล์ส่วนกลาง เช่น เมนู ส่วนท้าย ตัวแปรสี อยู่ใน style.css) */
 
 /* Breadcrumb / Back button bar */
@@ -636,4 +636,37 @@
   .banner-pixel-deco {
     display: none;
   }
+}
+
+/* ---------- ธีมสีส้มของหมวดพืชกินได้ ---------- */
+.plant-thumb-box {
+  background: linear-gradient(135deg, #fff7ec 0%, #ffe9cf 100%);
+  border-color: #ffcb87;
+}
+
+/* emoji อยู่ด้านหลังรูป: ถ้ามีรูปจริงรูปจะทับ ถ้ายังไม่มีรูปจะเห็น emoji */
+.thumb-emoji {
+  font-size: 2.8rem;
+  line-height: 1;
+}
+
+.plant-thumb-box img {
+  position: absolute;
+  inset: 0;
+}
+
+@media (hover: hover) {
+  .listing-plant-card:hover {
+    border-color: #d36600;
+  }
+
+  .view-info-btn:hover {
+    background: #e07a12;
+    box-shadow: 0 4px 10px rgba(211, 102, 0, 0.25);
+  }
+}
+
+.view-info-btn {
+  background: #d36600;
+  border-color: #a85000;
 }

@@ -15,10 +15,10 @@ const PLANTS = [
   { page: "edible.html", name: "ขนุน", info: "Jackfruit (Artocarpus heterophyllus) ยวงสีเหลืองทองรสหวานหอมกรอบ ส่วนผลอ่อนนำมาปรุงแกงคั่วหรือตำขนุนรสเลิศ" },
   { page: "edible.html", name: "ตะลิงปลิง", info: "Bilimbi (Averrhoa bilimbi) ผลไม้รสเปรี้ยวจี๊ดถึงใจ นิยมนำมาใส่ต้มยำ ยำ หรือทานคู่กับกะปิหวานเติมความสดชื่น" },
   { page: "edible.html", name: "ผักกูด", info: "Paco Fern (Diplazium esculentum) เฟิร์นทานได้ที่เจริญเติบโตเฉพาะแหล่งน้ำสะอาด ยอดม้วนกรอบ เหมาะทำยำผักกูดกุ้งสด" },
-  { page: "edible.html", name: "ข่าลิง / มะแขว่น", info: "Northern Pepper (Zanthoxylum limonella) เครื่องเทศล้านนาเอกลักษณ์ กลิ่นหอมซ่าเป็นเอกลักษณ์ นิยมใส่ในลาบคั่วและแกงแค" },
+  { page: "edible.html", name: "มะแขว่น", info: "Northern Pepper (Zanthoxylum limonella) เครื่องเทศล้านนาเอกลักษณ์ กลิ่นหอมซ่าเป็นเอกลักษณ์ นิยมใส่ในลาบคั่วและแกงแค" },
   { page: "edible.html", name: "มะกรูด", info: "Kaffir Lime (Citrus hystrix) ผิวมะกรูดและใบหอมฉุน ขาดไม่ได้ในต้มยำและพริกแกง มีน้ำมันหอมระเหยช่วยให้ผ่อนคลาย" },
   { page: "edible.html", name: "ผักแพว", info: "Vietnamese Coriander (Persicaria odorata) ผักพื้นบ้านกลิ่นหอมฉุน รสเผ็ดปร่าเล็กน้อย นิยมกินแนมกับลาบ น้ำตก และข้าวยำปักษ์ใต้" },
-  { page: "edible.html", name: "บัวสาย (สายบัว)", info: "Water Lily Stem (Nymphaea lotus) ก้านดอกสายบัวอุ้มน้ำ รสจืดกรอบหวานอ่อนๆ นิยมนำมาทำต้มกะทิสายบัวปลาทูสดรสกลมกล่อม" },
+  { page: "edible.html", name: "สายบัว", info: "Water Lily Stem (Nymphaea lotus) บัวสาย ก้านดอกสายบัวอุ้มน้ำ รสจืดกรอบหวานอ่อนๆ นิยมนำมาทำต้มกะทิสายบัวปลาทูสดรสกลมกล่อม" },
   // ----- สมุนไพร (herb.html)
   { page: "herb.html", name: "ฟ้าทะลายโจร", info: "Fah Talai Jone / Andrographis paniculata แก้ไข้หวัด บรรเทาอาการเจ็บคอ เสริมภูมิคุ้มกัน และต้านการอักเสบของระบบทางเดินหายใจ" },
   { page: "herb.html", name: "ขิง", info: "Ginger / Zingiber officinale ขับลม แก้ท้องอืด ท้องเฟ้อ ช่วยย่อยอาหาร กระตุ้นการไหลเวียนเลือด และบรรเทาอาการคลื่นไส้" },
